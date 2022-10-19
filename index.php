@@ -43,7 +43,6 @@
 </body>
 </html>
 
-<!-- Modal Nuevo -->
 <div class="modal fade" id="modal_nuevo1" tabindex="-1" role="dialog" aria-labelledby="modal_nuevo1" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -66,11 +65,11 @@
 						</div>
 						<div class="col-12 mb-3">
 							<label for="precio" style="font-weight:bold;">Precio</label>
-							<input type="text" class="form-control" name="precio" id="precio" required autocomplete="off">
+							<input type="text" class="form-control" name="precio" id="precio" required autocomplete="off" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 						</div>
 						<div class="col-12 mb-3">
 							<label for="peso" style="font-weight:bold;">Peso</label>
-							<input type="text" class="form-control" name="peso" id="peso" required autocomplete="off">
+							<input type="text" class="form-control" name="peso" id="peso" required autocomplete="off" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 						</div>
 						<div class="col-12 mb-3">
 							<label for="categoria" style="font-weight:bold;">Categoría</label>
@@ -78,7 +77,7 @@
 						</div>
 						<div class="col-12 mb-3">
 							<label for="stock" style="font-weight:bold;">Stock</label>
-							<input type="number" class="form-control" name="stock" id="stock" required autocomplete="off">
+							<input type="number" class="form-control" name="stock" id="stock" required autocomplete="off" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 						</div>
 						<div class="col-12 text-right">
 							<button type="submit" class="btn btn-success">Guardar</button>
@@ -89,9 +88,7 @@
 		</div>
 	</div>
 </div>
-<!------------------>
 
-<!-- Modal Nuevo -->
 <div class="modal fade" id="modal_editar" tabindex="-1" role="dialog" aria-labelledby="modal_editar" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -114,7 +111,7 @@
 						</div>
 						<div class="col-12 mb-3">
 							<label for="precio_m" style="font-weight:bold;">Precio</label>
-							<input type="text" class="form-control" name="precio_m" id="precio_m" required autocomplete="off">
+							<input type="text" class="form-control" name="precio_m" id="precio_m" required autocomplete="off" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 						</div>
 						<div class="col-12 mb-3">
 							<label for="peso_m" style="font-weight:bold;">Peso</label>
@@ -126,7 +123,7 @@
 						</div>
 						<div class="col-12 mb-3">
 							<label for="stock_m" style="font-weight:bold;">Stock</label>
-							<input type="number" class="form-control" name="stock_m" id="stock_m" required autocomplete="off">
+							<input type="number" class="form-control" name="stock_m" id="stock_m" required autocomplete="off" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 						</div>
 						<div class="col-12 text-right">
 							<button type="submit" class="btn btn-success">Guardar</button>
@@ -137,9 +134,7 @@
 		</div>
 	</div>
 </div>
-<!------------------>
 
-<!-- Modal Nuevo -->
 <div class="modal fade" id="modal_venta1" tabindex="-1" role="dialog" aria-labelledby="modal_venta1" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -170,7 +165,7 @@
 						</div>
 						<div class="col-12 mb-3">
 							<label for="stock_v" style="font-weight:bold;">Cantidad Vendida</label>
-							<input type="number" class="form-control" name="stock_v" id="stock_v" required autocomplete="off">
+							<input type="number" class="form-control" name="stock_v" id="stock_v" required autocomplete="off" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 						</div>
 						<div class="col-12 text-right">
 							<button type="submit" class="btn btn-success">Realizar Venta</button>
@@ -181,9 +176,7 @@
 		</div>
 	</div>
 </div>
-<!------------------>
 
-<!-- Modal Nuevo -->
 <div class="modal fade" id="modal_masstock1" tabindex="-1" role="dialog" aria-labelledby="modal_masstock1" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -212,9 +205,7 @@
 		</div>
 	</div>
 </div>
-<!------------------>
 
-<!-- Modal Nuevo -->
 <div class="modal fade" id="modal_masvendido" tabindex="-1" role="dialog" aria-labelledby="modal_masvendido" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -247,8 +238,6 @@
 		</div>
 	</div>
 </div>
-<!------------------>
-
 
 <input type="hidden" id="hidden_id" name="hidden_id">
 
